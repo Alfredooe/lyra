@@ -5,33 +5,8 @@ Lyra lets you deploy Minecraft server instances via Docker with control through 
 ## Licensing
 
 Lyra uses the GPL 3.0 license. This means that any components that use Lyra source code must use the same open-source GPL 3.0 license themselves. If you would like to use the Lyra source code for commercial use, please email **mail at superstomp.io** with more information.
-
---
-
-## Code snippets
-
-List containers command 
-
-    @bot.command()
-    async def containerlist(ctx):
-        jsonData = await async_comms('list', {})
-        await ctx.send(jsonData['result'])
-    
-Reading / Writing 
-
-    Defining reader and writer
-        reader, writer = await asyncio.open_connection('127.0.0.1', 8888)
-
-    Sending
-        json.dumps({'command': command, 'args', {'arg': 'one', 'arg_': 'two'}})
-
-    Receiving
-        return = await reader.read(100)
-        json.loads(return)
         
---
-        
-## Backend guide 
+## How to extend the backend 
 
 - Define a new function in  the class DockerCommandServer. (tip: if this deals with referencing (not creating) a container by name, put @gets_container on the line before; now, the variable container will always lead to a Container object
 - Specify any necessary arguments (and make sure when implementing the frontend to pass these!)
