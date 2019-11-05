@@ -8,7 +8,6 @@ Lyra uses the GPL 3.0 license. This means that any components that use Lyra sour
 Lyra was developed by [Justin Cuozzo](https://github.com/cosmopath) and [Alfredooe](https://github.com/Alfredooe) with contributions from [DashLt](https://github.com/DashLt) and [Nicholas Rosati](https://github.com/hydranoid620).
 
 ---
----
 
 ## Structure
 
