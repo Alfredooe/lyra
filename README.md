@@ -6,6 +6,13 @@ Lyra uses the GPL 3.0 license. This means that any components that use Lyra sour
 
 ## Contributors
 Lyra was developed by [Justin Cuozzo](https://github.com/cosmopath) and [Alfredooe](https://github.com/Alfredooe) with contributions from [DashLt](https://github.com/DashLt) and [Nicholas Rosati](https://github.com/hydranoid620).
+
+---
+---
+
+## Structure
+
+The front-end of Lyra, where the user and the Discord bot communicate is located in **script.py**. The back-end, which pulls data from the database and server to return it to the front-end is located in **server.py**.
         
 ## How to extend the backend 
 
