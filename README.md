@@ -5,7 +5,7 @@ Lyra lets you deploy Minecraft server instances via Docker with control through 
 Lyra uses the GPL 3.0 license. This means that any components that use Lyra source code must use the same open-source GPL 3.0 license themselves. If you would like to use the Lyra source code for commercial use, please email **mail at superstomp.io** with more information.
 
 ## Contributors
-Lyra was developed by [Justin Cuozzo](https://github.com/cosmopath) and [Alfredooe](https://github.com/Alfredooe) with contributions from [DashLt](https://github.com/DashLt), and [Nicholas Rosati](https://github.com/hydranoid620).
+Lyra was developed by [Justin Cuozzo](https://github.com/cosmopath) and [Alfredooe](https://github.com/Alfredooe) with contributions from [DashLt](https://github.com/DashLt) and [Nicholas Rosati](https://github.com/hydranoid620).
         
 ## How to extend the backend 
 
