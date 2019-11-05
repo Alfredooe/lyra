@@ -83,9 +83,9 @@ def error_handler (jsonData):
 
 # Randomly generate name
 def name_generator():
-	animals = open('animals.txt').read().splitlines()
-	adjectives = open('adjectives.txt').read().splitlines()
-	nouns = open('nouns.txt').read().splitlines()
+	animals = open('/misc/animals.txt').read().splitlines()
+	adjectives = open('/misc/adjectives.txt').read().splitlines()
+	nouns = open('/misc/nouns.txt').read().splitlines()
 	name = string.capwords(random.choice(adjectives)) + string.capwords(random.choice(nouns)) + string.capwords(random.choice(animals))
 	return name
 	#return ''.join(secrets.choice(alphabet) for i in range(12))
