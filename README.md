@@ -1,5 +1,3 @@
-# Lyra
-
 Lyra lets you deploy Minecraft server instances via Docker with control through a Discord bot. It has the functionality implemented to let users pay only for what they use by uploading/downloading servers to and from a private Backblaze B2 bucket when stopped and started, taking the storage load off the server. MySQL database to store user data not included.
 
 ## Licensing
