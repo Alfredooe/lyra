@@ -4,7 +4,7 @@ Deploying Minecraft server instances via Docker, with control through a Discord 
 
 # A word abount the license
 
-Lyra uses the GPL 3.0 license. This means that any components that use Lyra source code must use the same open-source GPL 3.0 license themselves. If you would like to use the Lyra source code for commercial use please email **mail at superstomp.io**
+Lyra uses the GPL 3.0 license. This means that any components that use Lyra source code must use the same open-source GPL 3.0 license themselves. If you would like to use the Lyra source code for commercial use, please email **mail at superstomp.io** with more information.
 
 ---
 
