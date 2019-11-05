@@ -1,12 +1,12 @@
 # Lyra
 
-Deploying Minecraft server instances via Docker, with control through a Discord bot. Lets users pay only for what they use by uploading/downloading servers to and from a private Backblaze B2 bucket when stopped and started. MySQL database to store user data not included.
+Lyra lets you deploy Minecraft server instances via Docker with control through a Discord bot. It has the functionality implemented to let users pay only for what they use by uploading/downloading servers to and from a private Backblaze B2 bucket when stopped and started, taking the storage load off the server. MySQL database to store user data not included.
 
 ## Licensing
 
 Lyra uses the GPL 3.0 license. This means that any components that use Lyra source code must use the same open-source GPL 3.0 license themselves. If you would like to use the Lyra source code for commercial use, please email **mail at superstomp.io** with more information.
 
----
+--
 
 ## Code snippets
 
@@ -29,7 +29,7 @@ Reading / Writing
         return = await reader.read(100)
         json.loads(return)
         
----
+--
         
 ## Backend guide 
 
