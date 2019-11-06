@@ -12,7 +12,6 @@ import mcstatus
 import traceback
 import shutil
 import urllib.request
-# import multithread
 import mysql.connector
 import nest_asyncio
 import subprocess
