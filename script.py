@@ -71,16 +71,6 @@ def error_handler (jsonData):
 	if jsonData['result'] == 'container not found':
 		return "You don't seem to have an instance created. Do that before running any server commands!"
 
-# Better version of above (I think) that hasn't been implemented yet
-# def sends_container(command):
-# 	def container_send_decorator(usesContainer):
-# 		"""Decorator function to automatically handle returning error in case container does not exist"""
-# 		async def sendContainer(*args, **kwargs):
-# 			kwargs["jsonData"] = await async_comms(kwargs["command"], {'container': ctx.message.author.id}) # CHANGE TO kwargs["container"] ONCE IMPLEMENTED
-# 			return usesContainer(*args, **kwargs)
-# 		return sendContainer
-# 	return container_send_decorator
-
 # Randomly generate name
 def name_generator():
 	animals = open('/misc/animals.txt').read().splitlines()
@@ -428,26 +418,6 @@ async def new(ctx):
 					await ctx.send(embed=embed)
 					print(str(ctx.message.author.name) + " has created an instance.")
 				else: print ("The instance could not be created.")
-
-			# elif reaction.emoji == e_three: 
-			# 	game = 'CUBERITE'
-			# 	picked_name = name_generator()
-			# 	password = ''.join(secrets.choice(alphabet) for i in range(12)) # for a 12-character password
-			# 	freeport2 = findfreeport()
-			# 	jsonData = await async_comms('create', {'name': picked_name, 'owner': str(ctx.message.author.id), 'port1': freeport, 'port2': freeport2, 'game': game, 'memory': '512M', 'admin_password': password})
-			# 	if jsonData['status'] == 'success':
-			# 		embed = discord.Embed(title = ":sparkles: Instance " + "**" + picked_name + "**" + " created!", description = "Minecraft Cuberite instance owned by" + str(ctx.message.author.mention) + " created at: " + "**" + ip + ":" + freeport + "**" + "\n\nPlease wait around 30 seconds for instance startup.", color=0x198C19)
-			# 		await ctx.send(embed=embed)
-			# 		print(str(ctx.message.author.name) + " has created an instance.")
-# Op on server
-# @bot.command()
-# async def op(ctx, username):
-# 	jsonData = await async_comms('inject', {'container': str(ctx.message.author.id), 'injectcommand': "op " + username})
-# 	if jsonData['status'] == 'success':
-# 		embed = discord.Embed(title = ":arrow_double_up: User opped.", description = "User " + str(username) + " has been opped on your instance.", color=0x595959)
-# 		await ctx.send(embed=embed)
-# 		print(str(ctx.message.author.name) + " has opped " + username + " on their instance.")
-# 	else: print ("The instance could not be created.")
 
 # Enter any server command
 @bot.command()
