@@ -23,7 +23,6 @@ import string
 import subprocess
 import time
 import random
-from hurry.filesize import size
 
 # Creating objects
 bot = commands.Bot(command_prefix='?')
